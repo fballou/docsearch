@@ -17,7 +17,7 @@ public class DocSearchTest {
     public void testRequest() {
         try {
             Handler myHandler = new Handler("technical/");
-            assertEquals("", myHandler.handleRequest(new URI("test")));
+            assertEquals("Don't know how to handle that path!", myHandler.handleRequest(new URI("test")));
         }
         catch (IOException e) {
             e.printStackTrace();
@@ -28,3 +28,5 @@ public class DocSearchTest {
     }
 }
 
+// USE THESE COMMANDS: javac -cp ".;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar" *.java
+// USE THESE COMMANDS: java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore DocSearchTest
