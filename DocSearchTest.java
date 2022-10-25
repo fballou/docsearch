@@ -4,10 +4,15 @@ import static org.junit.Assert.*;
 import java.net.URISyntaxException;
 import org.junit.Test;
 import org.junit.Assert;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
+import java.io.File;
 
 public class DocSearchTest {
  
-
     @Test 
     public void testRequest() {
         try {
@@ -22,3 +27,4 @@ public class DocSearchTest {
         }
     }
 }
+
